@@ -9,3 +9,20 @@ My chemical:
 C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub>
 
 Fractions: http://changelog.ca/log/2008/07/01/writing_fractions_in_html
+
+Tables: http://www.w3schools.com/html/html_tables.asp
+<table>
+    <tr> (table row)
+        <th> table header </th>
+        <th> table header </th>
+    </tr>
+    <tr>
+        <td> table data/cell </td>
+        <td> table data/cell </td>
+    </tr>
+</table>
+
+CSS table border example:
+table, th, td {
+    border: 1px solid black;
+}
