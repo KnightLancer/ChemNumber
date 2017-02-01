@@ -1,0 +1,11 @@
+Links:
+
+href - http://www.w3schools.com/tags/att_a_href.asp
+
+Link code:
+<li><a href="page">words</a></li>
+
+My chemical:
+C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub>
+
+Fractions: http://changelog.ca/log/2008/07/01/writing_fractions_in_html

@@ -1,0 +1,63 @@
+body {
+    background-image:url("http://eskipaper.com/images/chemistry-wallpaper-4.jpg");
+    background-attachment:fixed;
+}
+
+#name {
+    color:white;
+    text-align:center;
+    font-size:20pt;
+}
+
+#WYN {
+    text-align:center;
+    color:white;
+}
+
+#ChemNumber {
+    text-align:center;
+    color:white;
+}
+
+#Summary {
+    text-align:center;
+    color:white
+}
+
+#SumPar {
+    text-align:center;
+    color:white;
+    font-size:15pt
+}
+
+#instructions {
+    color:white;
+    text-align:center;
+    font-size:15pt;
+}
+
+#Questions {
+    color:white;
+    font-size:15pt;
+    text-align:center;
+}
+
+a:link, a:visited {
+    color:white;
+}
+
+a:hover {
+    background-color:blue;
+}
+
+#Q1 {
+    border-style:solid;
+}
+
+#Q2 {
+    border-style:solid;
+}
+
+#Q3 {
+    border-style:solid;
+}
