@@ -17,12 +17,61 @@
            #conversion {
                font-size:20pt;
            }
+           
+           table, th, td {
+               border: 1px solid white;
+               font-size:15pt;
+           }
+           
+           #what {
+               font-size:50pt;
+           }
         </style>
     </head>
     
     <body>
         <h2>Question 2. How much atomic mass of carbon/hydrogen/chlorine/nitrogen/oxygen is in 10 mg of cetirizine HCl?</h2>
         <h3>The process:</h3>
-        <p id="words">This was also a tricky question.</p>
+        <p id="words">This was also a tricky question. First, I found the atomic masses of each of the elements in C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub>. These values are the atomic masses out of 1 mole of cetirizine HCl. This became the first half of a proportion conversion:</p>
+        <p id="conversion"><sup>atomic mass</sup>&frasl;<sub>1 mol C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub></sub></p>
+        <p id="words">The other half of the conversion was the missing variable "x" (the atomic masses of said elements in 10 mg) over the amount of moles in 10 mg of cetirizine HCl (0.00002351005 mol):</p>
+        <p id="conversion"><sup>x</sup>&frasl;<sub>0.00002351005 mol</sub></p>
+        <p id="words">And thus the conversion:</p>
+        <p id="conversion"><sup>atomic mass</sup>&frasl;<sub>1 mol C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub></sub> = <sup>x</sup>&frasl;<sub>0.00002351005 mol</sub></p>
+        <p id="words">The table below contains the atomic masses and the results after the converison:</p>
+
+<p id="what">CONVERT FROM AMU TO GRAMS?!?!?!?!?!?</p>
+    <table align="center">
+    <tr>
+        <th>Element</th>
+        <th>Atomic Mass (out of 1 mole) (out of grams?)</th>
+        <th>Atomic Mass Results (out of 0.00002351005 mol)</th>
+    </tr>
+    <tr>
+        <td>Carbon 21 (C<sub>21</sub>)</td>
+        <td>252.21</td>
+        <td>0.00592946971</td>
+    </tr>
+    <tr>
+        <td>Hydrogen 26 (H<sub>26</sub>)</td>
+        <td>26.26</td>
+        <td>0.000617373913</td>
+    </tr>
+    <tr>
+        <td>Chlorine 2 (Cl<sub>2</sub>)</td>
+        <td>70.9</td>
+        <td>0.00166686255</td>
+    </tr>
+    <tr>
+        <td>Nitrogen 2 (N<sub>2</sub>)</td>
+        <td>28.02</td>
+        <td>0.000658751601</td>
+    </tr>
+    <tr>
+        <td>Oxygen 3 (O<sub>3</sub>)</td>
+        <td>48</td>
+        <td>0.0011284824</td>
+    </tr>
+</table>
     </body>
 </html>
