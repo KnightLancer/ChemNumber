@@ -8,7 +8,18 @@
                background-image:url("http://eskipaper.com/images/chemistry-wallpaper-4.jpg");
                color:white;
                text-align:center;
+               background-attachment:fixed;
            }
+           
+           #name {
+                color:white;
+                text-align:center;
+                font-size:20pt;
+            }
+           
+           a:link, a:visited {
+                color:white;
+            }
            
            #words {
                font-size:15pt;
@@ -22,15 +33,15 @@
                border: 1px solid white;
                font-size:15pt;
            }
-           
-           #what {
-               font-size:50pt;
-           }
         </style>
     </head>
     
+<p id="name"><a href="ChemNumber.html">Main</a></p>
+
+<br>
+
     <body>
-        <h2>Question 2. How much atomic mass of carbon/hydrogen/chlorine/nitrogen/oxygen is in 10 mg of cetirizine HCl?</h2>
+        <h2>Question 2. How many milligrams of carbon/hydrogen/chlorine/nitrogen/oxygen are in 10 mg of cetirizine HCl?</h2>
         <h3>The process:</h3>
         <p id="words">This was also a tricky question. First, I found the atomic masses of each of the elements in C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub>. These values are the atomic masses out of 1 mole of cetirizine HCl. This became the first half of a proportion conversion:</p>
         <p id="conversion"><sup>atomic mass</sup>&frasl;<sub>1 mol C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub></sub></p>
@@ -38,40 +49,55 @@
         <p id="conversion"><sup>x</sup>&frasl;<sub>0.00002351005 mol</sub></p>
         <p id="words">And thus the conversion:</p>
         <p id="conversion"><sup>atomic mass</sup>&frasl;<sub>1 mol C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub></sub> = <sup>x</sup>&frasl;<sub>0.00002351005 mol</sub></p>
-        <p id="words">The table below contains the atomic masses and the results after the converison:</p>
+        <p id="words">However that was not it. The result is still in atomic mass units. In order to convert from atomic mass units (amu) to grams, you must multiple amu by 1.66 x 10<sup>-24</sup> grams/amu.</p>
+        <p id="words">AND THEN to get from grams to milligrams, you divide by 1000.</p>
+    
+        <p id="words">The table below contains the elements and the results after the converisons:</p>
 
-<p id="what">CONVERT FROM AMU TO GRAMS?!?!?!?!?!?</p>
     <table align="center">
     <tr>
         <th>Element</th>
-        <th>Atomic Mass (out of 1 mole) (out of grams?)</th>
+        <th>Atomic Mass (out of 1 mole)</th>
         <th>Atomic Mass Results (out of 0.00002351005 mol)</th>
+        <th>Grams</th>
+        <th>Milligrams</th>
     </tr>
     <tr>
         <td>Carbon 21 (C<sub>21</sub>)</td>
         <td>252.21</td>
         <td>0.00592946971</td>
+        <td>9.8429197186 x 10<sup>-27</sup> or 0.0000000000000000000000000098429197186</td>
+        <td>9.8429197186 x 10<sup>-30</sup> or 0.0000000000000000000000000000098429197186</td>
     </tr>
     <tr>
         <td>Hydrogen 26 (H<sub>26</sub>)</td>
         <td>26.26</td>
         <td>0.000617373913</td>
+        <td>1.02484069558 x 10<sup>-27</sup> or 0.00000000000000000000000000102484069558</td>
+        <td>1.02484069558 x 10<sup>-30</sup> or 0.00000000000000000000000000000102484069558</td>
     </tr>
     <tr>
         <td>Chlorine 2 (Cl<sub>2</sub>)</td>
         <td>70.9</td>
         <td>0.00166686255</td>
+        <td>2.76699183 x 10<sup>-27</sup> or 0.00000000000000000000000000276699183</td>
+        <td>2.76699183 x 10<sup>-30</sup> or 0.00000000000000000000000000000276699183</td>
     </tr>
     <tr>
         <td>Nitrogen 2 (N<sub>2</sub>)</td>
         <td>28.02</td>
         <td>0.000658751601</td>
+        <td>1.09352766 x 10<sup>-27</sup> or 0.00000000000000000000000000109352765766</td>
+        <td>1.09352766 x 10<sup>-30</sup> or 0.00000000000000000000000000000109352765766</td>
     </tr>
     <tr>
         <td>Oxygen 3 (O<sub>3</sub>)</td>
         <td>48</td>
         <td>0.0011284824</td>
+        <td>1.8732808 x 10<sup>-27</sup> or 0.000000000000000000000000001873280784</td>
+        <td>1.8732808 x 10<sup>-30</sup> or 0.000000000000000000000000000001873280784</td>
     </tr>
 </table>
     </body>
+    
 </html>

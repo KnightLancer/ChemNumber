@@ -26,3 +26,9 @@ CSS table border example:
 table, th, td {
     border: 1px solid black;
 }
+
+Atomic Mass Unit to Grams calculator: http://www.unitconversion.org/weight/atomic-mass-units-to-grams-conversion.html
+
+Gram atomic mass: https://en.wikipedia.org/wiki/Gram_atomic_mass
+
+Converting from amu to grams: https://wikis.engrade.com/convertingfromamutogram
