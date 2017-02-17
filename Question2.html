@@ -41,7 +41,12 @@
            
            #cell2 {
                border-left:0px;
-               text-align:left;
+               border-right:0px;
+               text-align:center;
+           }
+           
+           #cell3 {
+               border-left:0px;
            }
         </style>
     </head>
@@ -51,100 +56,106 @@
 <br>
 
     <body>
-        <h2>Question 2. How many milligrams of carbon/hydrogen/chlorine/nitrogen/oxygen are in 10 mg of cetirizine HCl?</h2>
+        <h2>Question 2. How many milligrams and grams of carbon, hydrogen, chlorine, nitrogen, and oxygen are in 1 tablet of Aller-tec?</h2>
         <h3>The process:</h3>
-        <p id="words">First, I found the atomic masses of each of the elements in C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub> according to the periodic table of elements:</p>
+        <p id="words">First, I found the molar masses of each of the elements in C<sub>21</sub>H<sub>26</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>3</sub>, the active ingredient in Aller-tec, according to the periodic table of elements. The amounts in cetirizine HCl were calculated by multiplying the number of molecules in each element by their molar mass:</p>
 <table align="center">
     <tr>
         <th>Chemical</th>
-        <th>Atomic Mass Unit</th>
+        <th>Molar Mass (grams per mole)</th>
+        <th>Number of Molecules</th>
         <th>Amount in Cetirizine Hydrochloride</th>
     </tr>
     <tr>
-        <td>Carbon</td>
+        <td>Carbon (C)</td>
         <td>12.01</td>
+        <td>21</td>
         <td>252.21</td>
     </tr>
     <tr>
-        <td>Hydrogen</td>
+        <td>Hydrogen (H)</td>
         <td>1.01</td>
+        <td>26</td>
         <td>26.26</td>
     </tr>
     <tr>
-        <td>Chlorine</td>
+        <td>Chlorine (Cl)</td>
         <td>35.45</td>
+        <td>2</td>
         <td>70.9</td>
     </tr>
     <tr>
-        <td>Nitrogen</td>
+        <td>Nitrogen (N)</td>
         <td>14.01</td>
+        <td>2</td>
         <td>28.02</td>
     </tr>
     <tr>
-        <td>Oxygen</td>
+        <td>Oxygen (O)</td>
         <td>16</td>
+        <td>3</td>
         <td>48</td>
     </tr>
     <tr>
-        <td id="cell1">Rounded</td>
-        <td id="cell2">Total</td>
+        <td id="cell1"></td>
+        <td id="cell2">Rounded Total</td>
+        <td id="cell3"></td>
         <td>425.35</td>
     </tr>
 </table>
-        <p id="words">These values are the atomic masses out of 1 mole of cetirizine HCl. This became the first half of a proportion conversion:</p>
-        <img src="equation3.png" width="25%">
-        <p id="words">The other half of the conversion was the missing variable "x" (the atomic masses of said elements in 10 mg) over the amount of moles in 10 mg of cetirizine HCl (0.00002351005 mol):</p>
-        <img src="equation4.png" width="25%">
-        <p id="words">And thus the conversion:</p>
+        <p id="words">Now, using dimensional analysis, I know that 10 milligrams is equal to 0.01 grams. My end result is the number of grams in one of the elements in cetirizine HCl, so in order to start the prcoess, I multiplied 0.01 grams by the molar mass of cetirizine HCl:</p>
+        <img src="equation2.png" width="25%">
+        <p id="words">Next, I multiplied the above equation by the number of molecules of the element I am looking at over 1 mol of that element:</p>
+        <img src="equation3.png" width="40%">
+        <p id="words">Finally, I multiplied what I have so far with the molar mass of the element under focus:</p>
+        <img src="equation4.png" width="55%">
+        <p id="words">By the rules of dimensional analysis, the grams and mols should cancel out each other and leave the grams of the molar mass of each element alone. The grams becomes the final unit, and the value is the grams of that element in 1 tablet. Take, for example, carbon. If we replace the missing values of the equation with carbon values, it will look like this:</p>
         <img src="equation5.png" width="45%">
-        <p id="words">However that was not it. The result is still in atomic mass units. In order to convert from atomic mass units (amu) to grams, you must multiple amu by 1.66 x 10<sup>-24</sup> grams/amu. Say the following "x" is the result of the previous conversion:</p>
-        <img src="equation6.png" width="25%">
-        <p id="words">AND THEN to get from grams to milligrams, you divide by 1000.</p>
-    
+        <p id="words">This equation will output the number of grams in 10 milligrams of cetirizine HCl. If milligrams is desired, multiply the final result by 1000.</p>
         <p id="words">The table below contains the elements and the results after the converisons:</p>
 
     <table align="center">
     <tr>
         <th>Element</th>
-        <th>Atomic Mass (out of 1 mole)</th>
-        <th>Atomic Mass Results (out of 0.00002351005 mol)</th>
-        <th>Milligrams</th>
+        <th>Number of molecules</th>
+        <th>Molar Mass</th>
         <th>Grams</th>
+        <th>Milligrams</th>
     </tr>
     <tr>
-        <td>Carbon 21 (C<sub>21</sub>)</td>
-        <td>252.21</td>
-        <td>0.00592946971</td>
-        <td>9.8429197186 x 10<sup>-30</sup> or 0.0000000000000000000000000000098429197186</td>
-        <td>9.8429197186 x 10<sup>-27</sup> or 0.0000000000000000000000000098429197186</td>
+        <td>Carbon (C<sub>21</sub>)</td>
+        <td>21</td>
+        <td>12.01 g/mol</td>
+        <td>0.0059294698483602</td>
+        <td>5.9294698483602</td>
     </tr>
     <tr>
-        <td>Hydrogen 26 (H<sub>26</sub>)</td>
-        <td>26.26</td>
-        <td>0.000617373913</td>
-        <td>1.02484069558 x 10<sup>-30</sup> or 0.00000000000000000000000000000102484069558</td>
-        <td>1.02484069558 x 10<sup>-27</sup> or 0.00000000000000000000000000102484069558</td>
+        <td>Hydrogen (H<sub>26</sub>)</td>
+        <td>26</td>
+        <td>1.01 g/mol</td>
+        <td>0.0006173739273539</td>
+        <td>0.6173739273539</td>
     </tr>
     <tr>
-        <td>Chlorine 2 (Cl<sub>2</sub>)</td>
-        <td>70.9</td>
-        <td>0.00166686255</td>
-        <td>2.76699183 x 10<sup>-30</sup> or 0.00000000000000000000000000000276699183</td>
-        <td>2.76699183 x 10<sup>-27</sup> or 0.00000000000000000000000000276699183</td>
+        <td>Chlorine (Cl<sub>2</sub>)</td>
+        <td>2</td>
+        <td>35.45 g/mol</td>
+        <td>0.0016668625837546</td>
+        <td>1.6668625837546</td>
     </tr>
     <tr>
-        <td>Nitrogen 2 (N<sub>2</sub>)</td>
-        <td>28.02</td>
-        <td>0.000658751601</td>
-        <td>1.09352766 x 10<sup>-30</sup> or 0.00000000000000000000000000000109352765766</td>
-        <td>1.09352766 x 10<sup>-27</sup> or 0.00000000000000000000000000109352765766</td>
+        <td>Nitrogen (N<sub>2</sub>)</td>
+        <td>2</td>
+        <td>14.01 g/mol</td>
+        <td>0.000658751616316</td>
+        <td>0.658751616316</td>
     </tr>
     <tr>
-        <td>Oxygen 3 (O<sub>3</sub>)</td>
-        <td>48</td>
-        <td>0.0011284824</td>
-        <td>1.8732808 x 10<sup>-30</sup> or 0.000000000000000000000000000001873280784</td>
-        <td>1.8732808 x 10<sup>-27</sup> or 0.000000000000000000000000001873280784</td>
+        <td>Oxygen (O<sub>3</sub>)</td>
+        <td>3</td>
+        <td>16 g/mol</td>
+        <td>0.0011284824262372</td>
+        <td>1.1284824262372</td>
     </tr>
 </table>
     </body>
